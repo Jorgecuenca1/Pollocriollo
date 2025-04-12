@@ -1,0 +1,1021 @@
+<!DOCTYPE html>
+{% load static %}
+
+<html lang="en">
+	<head>
+        <title>Poultry Farm</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- google fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
+		<link rel="shortcut icon" type="image/x-icon" href="{% static 'assets/images/x-icon/01.png' %}">
+
+		<link rel="stylesheet" href="{% static 'assets/css/animate.css' %}">
+		<link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.css' %}">
+		<link rel="stylesheet" href="{% static 'assets/css/all.min.css' %}">
+		<link rel="stylesheet" href="{% static 'assets/css/icofont.min.css' %}">
+		<link rel="stylesheet" href="{% static 'assets/css/lightcase.css' %}">
+		<link rel="stylesheet" href="{% static 'assets/css/swiper.min.css' %}">
+		<link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
+	</head>
+
+	<body>
+
+		<!-- preloader start here -->
+		<div class="preloader">
+			<div class="preloader-inner">
+				<div class="preloader-icon">
+					<span></span>
+					<span></span>
+				</div>
+			</div>
+		</div>
+		<!-- preloader ending here -->
+
+		
+		<!--search area-->
+		<div class="search-input">
+			<div class="search-close">
+				<i class="icofont-close-circled"></i>
+			</div>
+			<form>
+				<input type="text" name="text" placeholder="Search Heare">
+				<button class="search-btn" type="submit">
+					<i class="icofont-search-2"></i>
+				</button>
+			</form>
+		</div>
+		<!-- search area -->
+
+		<!-- Mobile Menu Start Here -->
+		<div class="mobile-menu transparent-header">
+			<nav class="mobile-header">
+				<div class="header-logo">
+					<a href="index.html"><img src="{% static 'assets/images/logo/01.png' %}" alt="logo"></a>
+				</div>
+				<div class="header-bar">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+			</nav>
+			<nav class="mobile-menu">
+				<div class="mobile-menu-area">
+					<div class="mobile-menu-area-inner">
+						<ul class="lab-ul">
+							<li class="active">
+								<a href="#0">Inicio</a>
+								<ul class="lab-ul">
+									<li><a href="index.html">Inicio</a></li>
+									<li><a href="index-2.html">Inicio Page Two</a></li>
+								</ul>
+							</li>
+							<li><a href="about.html">Nosotros</a></li>
+							<li>
+								<a href="#0">Paginas</a>
+								<ul class="lab-ul">
+									<li><a href="team.html">Colaboradores</a></li>
+									<li><a href="faq-page.html">Preguntas frecuentes</a></li>
+
+								</ul>
+							</li>
+							<li>
+								<a href="#0">Blog</a>
+								<ul class="lab-ul">
+									<li><a href="blog.html">Blog</a></li>
+									<li><a href="blog-single.html">Blog Details</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#0">Compra</a>
+								<ul class="lab-ul">
+									<li><a href="product-page.html">Productos</a></li>
+									<li><a href="product-single.html">Products Details</a></li>
+									<li><a href="cart-page.html">Cart Page</a></li>
+								</ul>
+							</li>
+							<li><a href="contact.html">Contactanos</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</div>
+		<!-- Mobile Menu Ending Here -->
+
+		<!-- desktop menu start here -->
+		<header class="header-section">
+			<div class="header-top">
+				<div class="container">
+					<div class="row justify-content-center align-items-center">
+						<div class="col-lg-5 col-12">
+							<div class="logo py-2">
+								<a href="index.html"><img src="{% static 'assets/images/logo/01.png' %}" alt="logo"></a>
+							</div>
+						</div>
+						<div class="col-lg-7 col-12">
+							<div class="ht-left">
+								<ul class="lab-ul d-flex flex-wrap justify-content-end">
+									<li class="d-flex flex-wrap align-items-center">
+										<div class="ht-add-thumb mr-2">
+											<img src="{% static 'assets/images/header/01.png' %}" alt="address">
+										</div>
+										<div class="ht-add-content">
+											<span>Villavicencio</span>
+											<span class="d-block text-bold">Colombia , Meta</span>
+										</div>
+									</li>
+									<li class="d-flex flex-wrap align-items-center">
+										<div class="ht-add-thumb mr-2">
+											<img src="{% static 'assets/images/header/02.png' %}" alt="email">
+										</div>
+										<div class="ht-add-content">
+											<span>Enviar Email </span>
+											<span class="d-block text-bold">murgifarm@gmail.com</span>
+										</div>
+									</li>
+									<li class="d-flex flex-wrap align-items-center">
+										<div class="ht-add-thumb mr-2">
+											<img src="{% static 'assets/images/header/03.png' %}" alt="call">
+										</div>
+										<div class="ht-add-content">
+											<span>Whatsapp </span>
+											<span class="d-block text-bold">+573102337052</span>
+										</div>
+									</li>
+
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="header-bottom bg-theme">
+				<div class="header-area">
+					<div class="container">
+						<div class="primary-menu">
+							<div class="main-area w-100">
+								<div class="main-menu d-flex flex-wrap align-items-center justify-content-between w-100">
+									<div class="logo">
+										<a href="index.html"><img src="{% static 'assets/images/logo/02.png' %}" alt="logo"></a>
+									</div>
+									<ul class="lab-ul">
+										<li class="active">
+											<a href="index.html">Inicio</a>
+											<ul class="lab-ul">
+												<li><a href="index.html">Inicio</a></li>
+
+											</ul>
+										</li>
+										<li><a href="about.html">Nosotros</a></li>
+										<li>
+											<a href="#0">Paginas</a>
+											<ul class="lab-ul">
+												<li><a href="team.html">Colaboradores</a></li>
+												<li><a href="faq-page.html">Preguntas frecuentes</a></li>
+
+											</ul>
+										</li>
+										<!--
+<li>
+	<a href="#0">Blog</a>
+	<ul class="lab-ul">
+		<li><a href="blog.html">Blog</a></li>
+	</ul>
+</li>
+-->
+
+										<li>
+											<a href="#0">Compra</a>
+											<ul class="lab-ul">
+												<li><a href="product-page.html">Productos</a></li>
+
+											</ul>
+										</li>
+										<li>
+											<a href="#0">Galeria</a>
+											<ul class="lab-ul">
+												<li><a href="gallery-1.html">Galleria</a></li>
+
+											</ul>
+										</li>
+										<li><a href="contact.html">Contactanos</a></li>
+									</ul>
+									<ul class="lab-ul search-cart">
+										<li>
+											<div class="cart-option">
+												<i class="icofont-cart-alt"></i>
+												<div class="cart-content">
+													<div class="cart-item">
+														<div class="cart-img">
+															<a href="#"><img src="{% static 'assets/images/products/product/01.png' %}"
+																	alt="cart"></a>
+														</div>
+														<div class="cart-des">
+															<a href="#">Product Title Here</a>
+															<p>$20.00</p>
+														</div>
+														<div class="cart-btn">
+															<a href="#"><i class="icofont-close-circled"></i></a>
+														</div>
+													</div>
+													<div class="cart-item">
+														<div class="cart-img">
+															<a href="#"><img src="{% static 'assets/images/products/product/02.png' %}"
+																	alt="cart"></a>
+														</div>
+														<div class="cart-des">
+															<a href="#">Product Title Here</a>
+															<p>$20.00</p>
+														</div>
+														<div class="cart-btn">
+															<a href="#"><i class="icofont-close-circled"></i></a>
+														</div>
+													</div>
+													<div class="cart-bottom">
+														<div class="cart-subtotal">
+															<p>Total: <b class="float-right">$40.00</b></p>
+														</div>
+														<div class="cart-action">
+															<a href="#" class="lab-btn"><span>View Cart</span></a>
+															<a href="#" class="lab-btn"><span>Check Out</span></a>
+														</div>
+													</div>
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="search-option">
+												<i class="icofont-search-2"></i>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- desktop menu ending here -->
+
+		<!-- Banner Section Start Here -->
+		<section class="banner">
+			<div class="banner-slider">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<div class="banner-slider-part"
+							style="background-image: url('{% static "assets/images/banner/bg-images/01.jpg" %}');"
+>
+							<div class="overlay"></div>
+							<div class="container">
+								<div class="row flex-row-reverse justify-content-center align-items-center">
+									<div class="col-12">
+										<div class="banner-content">
+											<h1 class="banner-title"><B class="d-lg-block">Pollo Criollo fresco </B>
+												Especialidad en carne de pollo, la mejor calidad!!! </h1>
+											<a href="#" class="lab-btn"><span>Descubre ahora</span></a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="banner-slider-part"
+							style="background-image: url({% static 'assets/images/banner/bg-images/02.jpg' %}");">
+							<div class="overlay"></div>
+							<div class="container">
+								<div class="row flex-row-reverse justify-content-center align-items-center">
+									<div class="col-12">
+										<div class="banner-content">
+											<h1 class="banner-title"><B class="d-lg-block">Pollo Criollo fresco </B>
+												Especialidad en carne de pollo, la mejor calidad!!! </h1>
+											<a href="#" class="lab-btn"><span>Descubre ahora</span></a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="banner-slider-part"
+							style="background-image: url({% static 'assets/images/banner/bg-images/01.jpg' %}");">
+							<div class="overlay"></div>
+							<div class="container">
+								<div class="row flex-row-reverse justify-content-center align-items-center">
+									<div class="col-12">
+										<div class="banner-content">
+											<h1 class="banner-title"><B class="d-lg-block">Pollo Criollo fresco </B>
+												Especialidad en carne de pollo, la mejor calidad!!! </h1>
+											<a href="#" class="lab-btn"><span>Descubre ahora</span></a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-pagination"></div>
+			</div>
+		</section>
+		<!-- Banner Section Ending Here -->
+
+		<!-- about section start here -->
+		<section class="about-section relative padding-tb bg-ash">
+    <div class="container">
+        <div class="row mb-15">
+            <div class="col-xl-7 col-12">
+                <div class="about-left-part">
+                    <div class="about-item">
+                        <div class="about-inner">
+                            <div class="about-thumb">
+                                <img src="{% static 'assets/images/about/05.jpg' %}" alt="Granja Pollo Criollo">
+                            </div>
+                            <div class="about-content">
+                                <div class="ac-thumb">
+                                    <img src="{% static 'assets/images/about/icon/01.png' %}" alt="Icono Granja">
+                                </div>
+                                <div class="ac-content">
+                                    <h6>Recolectamos más de 700 huevos diarios</h6>
+                                    <p>Trabajamos incansablemente para ofrecerte los mejores huevos frescos cada día.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-item">
+                        <div class="about-inner">
+                            <div class="about-thumb">
+                                <img src="{% static 'assets/images/about/06.jpg' %}" alt="Pollos Pollo Criollo">
+                            </div>
+                            <div class="about-content">
+                                <div class="ac-thumb">
+                                    <img src="{% static 'assets/images/about/icon/02.png' %}" alt="Icono Pollos">
+                                </div>
+                                <div class="ac-content">
+                                    <h6>Más de 500 pollos en nuestra granja</h6>
+                                    <p>Garantizamos la mejor calidad en carnes de pollo, criados con los más altos estándares.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-item">
+                        <div class="about-inner">
+                            <div class="about-thumb">
+                                <img src="{% static 'assets/images/about/07.jpg' %}" alt="Carne de Pollo Pollo Criollo">
+                            </div>
+                            <div class="about-content">
+                                <div class="ac-thumb">
+                                    <img src="{% static 'assets/images/about/icon/03.png' %}" alt="Icono Carne">
+                                </div>
+                                <div class="ac-content">
+                                    <h6>Más de 100kg de carne de pollo diarios</h6>
+                                    <p>Producción constante para satisfacer la demanda de carne fresca y de calidad.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-5 col-12">
+                <div class="about-wrapper p-0">
+                    <div class="about-title">
+                        <h2><span class="d-lg-block">Bienvenidos a nuestra granja Pollo Criollo</span><span class="d-lg-block"> de pollos y huevos.</span></h2>
+                    </div>
+                    <div class="about-content">
+                        <p>Nos dedicamos a ofrecer productos frescos y de calidad para tu mesa. En Pollo Criollo, trabajamos día a día para brindarte lo mejor en huevos frescos y carne de pollo, criados con mucho cuidado y responsabilidad.</p>
+                        <ul class="lab-ul list-group mb-3">
+                            <li class="list-group-item py-1 px-0 border-none"><i class="icofont-tick-boxed mr-2 color-theme"></i>Ofrecemos productos frescos y de calidad</li>
+                            <li class="list-group-item py-1 px-0 border-none"><i class="icofont-tick-boxed mr-2 color-theme"></i>Somos una de las principales granjas de la región</li>
+                            <li class="list-group-item py-1 px-0 border-none"><i class="icofont-tick-boxed mr-2 color-theme"></i>La rentabilidad y calidad son nuestros principales objetivos</li>
+                            <li class="list-group-item py-1 px-0 border-none"><i class="icofont-tick-boxed mr-2 color-theme"></i>Te enseñamos cómo mejorar tu alimentación con productos de granja</li>
+                            <li class="list-group-item py-1 px-0 border-none"><i class="icofont-tick-boxed mr-2 color-theme"></i>Soluciones profesionales para tu negocio</li>
+                        </ul>
+                        <a href="#" class="lab-btn mt-2"><span>Leer más</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+		<!-- about section ending here -->
+
+		<!-- Feature section start here -->
+		<section class="feature-section padding-tb">
+			<div class="container">
+				<div class="row text-center justify-content-center">
+					<div class="col-lg-3 col-sm-6 col-12">
+						<div class="lab-item">
+							<div class="lab-inner">
+								<div class="lab-thumb">
+									<img src="{% static 'assets/images/feature/05.png' %}" alt="Alimentación Natural">
+								</div>
+								<div class="lab-content">
+									<h6>Alimentación Natural</h6>
+									<p>En *Pollo Criollo*, nuestros pollos son alimentados con ingredientes naturales para asegurar la mejor calidad.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-sm-6 col-12">
+						<div class="lab-item">
+							<div class="lab-inner">
+								<div class="lab-thumb">
+									<img src="{% static 'assets/images/feature/06.png' %}" alt="Campos Propios">
+								</div>
+								<div class="lab-content">
+									<h6>Campos Propios</h6>
+									<p>Cultivamos nuestros propios alimentos para asegurar la frescura y calidad de nuestros productos.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-sm-6 col-12">
+						<div class="lab-item">
+							<div class="lab-inner">
+								<div class="lab-thumb">
+									<img src="{% static 'assets/images/feature/07.png' %}" alt="Granja Moderna">
+								</div>
+								<div class="lab-content">
+									<h6>Granja Moderna</h6>
+									<p>Nuestra granja está equipada con tecnología moderna para ofrecer los mejores productos en todo momento.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-sm-6 col-12">
+						<div class="lab-item">
+							<div class="lab-inner">
+								<div class="lab-thumb">
+									<img src="{% static 'assets/images/feature/08.png' %}" alt="100% Orgánico">
+								</div>
+								<div class="lab-content">
+									<h6>100% Orgánico</h6>
+									<p>Todos nuestros productos son 100% orgánicos, garantizando lo mejor para tu salud y bienestar.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Feature section ending here -->
+
+
+		<!-- product category section start here -->
+<section class="product-section relative padding-tb bg-ash">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12">
+                <div class="section-header">
+                    <h3>Productos de Granja Pollo Criollo</h3>
+                    <p>En *Pollo Criollo*, ofrecemos productos frescos y naturales directamente de nuestra granja.</p>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="section-wrapper">
+                    <div class="row justify-content-center mb-15-none">
+                        <div class="col-xl-3 col-lg-4 col-sm-6 col-12">
+                            <div class="product-item-2">
+                                <div class="product-inner">
+                                    <div class="product-thumb">
+                                        <img src="{% static 'assets/images/products/product/01.png' %}" alt="Huevos Marrones Claros">
+                                    </div>
+                                    <div class="product-content">
+                                        <a href="#"><h6>Huevos Marrones Claros</h6></a>
+                                        <div class="rating">
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                        </div>
+                                        <h6 class="price">$39.99</h6>
+                                        <div class="cart-option">
+                                            <a href="#" class="lab-btn"><span>Agregar al carrito</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-sm-6 col-12">
+                            <div class="product-item-2">
+                                <div class="product-inner">
+                                    <div class="product-thumb">
+                                        <img src="{% static 'assets/images/products/product/02.png' %}" alt="Pollos Broiler Pequeños">
+                                    </div>
+                                    <div class="product-content">
+                                        <a href="#"><h6>Pollos Broiler Pequeños</h6></a>
+                                        <div class="rating">
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                        </div>
+                                        <h6 class="price">$39.99</h6>
+                                        <div class="cart-option">
+                                            <a href="#" class="lab-btn"><span>Agregar al carrito</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-sm-6 col-12">
+                            <div class="product-item-2">
+                                <div class="product-inner">
+                                    <div class="product-thumb">
+                                        <img src="{% static 'assets/images/products/product/03.png' %}" alt="Huevos Marrones Blancos">
+                                    </div>
+                                    <div class="product-content">
+                                        <a href="#"><h6>Huevos Marrones Blancos</h6></a>
+                                        <div class="rating">
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                        </div>
+                                        <h6 class="price">$39.99</h6>
+                                        <div class="cart-option">
+                                            <a href="#" class="lab-btn"><span>Agregar al carrito</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-sm-6 col-12">
+                            <div class="product-item-2">
+                                <div class="product-inner">
+                                    <div class="product-thumb">
+                                        <img src="{% static 'assets/images/products/product/04.png' %}" alt="Pollo Broiler">
+                                    </div>
+                                    <div class="product-content">
+                                        <a href="#"><h6>Pollo Broiler</h6></a>
+                                        <div class="rating">
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                        </div>
+                                        <h6 class="price">$39.99</h6>
+                                        <div class="cart-option">
+                                            <a href="#" class="lab-btn"><span>Agregar al carrito</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-sm-6 col-12">
+                            <div class="product-item-2">
+                                <div class="product-inner">
+                                    <div class="product-thumb">
+                                        <img src="{% static 'assets/images/products/product/05.png' %}" alt="Pollo Fresco">
+                                    </div>
+                                    <div class="product-content">
+                                        <a href="#"><h6>Pollo Fresco</h6></a>
+                                        <div class="rating">
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                        </div>
+                                        <h6 class="price">$39.99</h6>
+                                        <div class="cart-option">
+                                            <a href="#" class="lab-btn"><span>Agregar al carrito</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-sm-6 col-12">
+                            <div class="product-item-2">
+                                <div class="product-inner">
+                                    <div class="product-thumb">
+                                        <img src="{% static 'assets/images/products/product/06.png' %}" alt="Pollo Broiler Crudo">
+                                    </div>
+                                    <div class="product-content">
+                                        <a href="#"><h6>Pollo Broiler Crudo</h6></a>
+                                        <div class="rating">
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                        </div>
+                                        <h6 class="price">$39.99</h6>
+                                        <div class="cart-option">
+                                            <a href="#" class="lab-btn"><span>Agregar al carrito</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-center mt-3 mb-2">
+            <a href="#" class="lab-btn"><span>Comprar ahora</span></a>
+        </div>
+    </div>
+</section>
+<!-- product category section ending here -->
+
+
+		<!-- Gallery section start here -->
+		<!-- Sección de Galería de la Granja Pollo Criollo -->
+		<section class="gallery-section padding-tb">
+			<div class="container-fluid p-0 m-0">
+				<div class="row">
+					<div class="col-12">
+						<div class="section-header">
+							<h3>Galería de la Granja Pollo Criollo</h3>
+							<p>Personaliza convenientemente los servicios web proactivos para interfaces aprovechadas sin fronteras.</p>
+						</div>
+					</div>
+					<div class="col-12">
+						<div class="gallery-content">
+							<div class="gallery-grid text-center">
+								<a href="{% static 'assets/images/gallery/01.jpg' %}" data-rel="lightcase:myCollection:slideshow" class="grid-image">
+									<img src="{% static 'assets/images/gallery/01.jpg' %}" alt="imagen de la galería">
+								</a>
+								<a href="{% static 'assets/images/gallery/02.jpg' %}" data-rel="lightcase:myCollection:slideshow" class="grid-image">
+									<img src="{% static 'assets/images/gallery/02.jpg' %}" alt="imagen de la galería">
+								</a>
+								<a href="{% static 'assets/images/gallery/03.jpg' %}" data-rel="lightcase:myCollection:slideshow" class="grid-image">
+									<img src="{% static 'assets/images/gallery/03.jpg' %}" alt="imagen de la galería">
+								</a>
+								<a href="{% static 'assets/images/gallery/04.jpg' %}" data-rel="lightcase:myCollection:slideshow" class="grid-image">
+									<img src="{% static 'assets/images/gallery/04.jpg' %}" alt="imagen de la galería">
+								</a>
+								<a href="{% static 'assets/images/gallery/05.jpg' %}" data-rel="lightcase:myCollection:slideshow" class="grid-image">
+									<img src="{% static 'assets/images/gallery/05.jpg' %}" alt="imagen de la galería">
+								</a>
+								<a href="{% static 'assets/images/gallery/06.jpg' %}" data-rel="lightcase:myCollection:slideshow" class="grid-image">
+									<img src="{% static 'assets/images/gallery/06.jpg' %}" alt="imagen de la galería">
+								</a>
+								<a href="{% static 'assets/images/gallery/07.jpg' %}" data-rel="lightcase:myCollection:slideshow" class="grid-image">
+									<img src="{% static 'assets/images/gallery/07.jpg' %}" alt="imagen de la galería">
+								</a>
+								<a href="{% static 'assets/images/gallery/08.jpg' %}" data-rel="lightcase:myCollection:slideshow" class="grid-image">
+									<img src="{% static 'assets/images/gallery/08.jpg' %}" alt="imagen de la galería">
+								</a>
+							</div>
+							<div class="gallery-btn text-center mt-5">
+								<a href="#" class="lab-btn"><span>Cargar Galería</span></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Fin de la sección de Galería -->
+
+
+
+		<!--Video Section Start here-->
+		<div class="video-section padding-tb bg-ash">
+			<div class="container">
+				<div class="video-section-wrapper mb-15">
+					<div class="video-content">
+						<img src="{% static 'assets/images/bg-images/video-bg.jpg' %}"" alt="Video-background">
+						<a href="https://youtu.be/cvOx1uC1-oA" data-rel="lightcase"><img src="{% static 'assets/images/bg-images/yt-icon.png' %}" alt="Play"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--Video Section Ending here-->
+
+		<!-- Ciclo de Vida del Pollo Start Here -->
+		<section class="chicken-life-cycle padding-tb">
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col-lg-6 col-12">
+						<div class="lab-item">
+							<div class="lab-thumb"><img src="{% static 'assets/images/about/02.png' %}" alt="ciclo-de-vida-del-pollo"></div>
+						</div>
+					</div>
+					<div class="col-lg-6 col-12">
+						<div class="lab-item">
+							<div class="lab-content">
+								<h3>Ciclo de Vida del Pollo</h3>
+								<p>Desarrollamos un ciclo de vida saludable y eficiente para nuestras aves, garantizando su bienestar desde el huevo hasta la etapa adulta.</p>
+								<div class="row mt-5">
+									<div class="col-12">
+										<div class="life-cycle-item d-flex flex-wrap">
+											<div class="lci-left">
+												01
+											</div>
+											<div class="lci-right">
+												<h6>Adulto</h6>
+												<p>En esta etapa, los pollos alcanzan su madurez y están listos para producir huevos o ser vendidos como carne de alta calidad.</p>
+											</div>
+										</div>
+									</div>
+									<div class="col-12">
+										<div class="life-cycle-item d-flex flex-wrap">
+											<div class="lci-left">
+												02
+											</div>
+											<div class="lci-right">
+												<h6>Huevo</h6>
+												<p>El proceso comienza con la puesta de huevos, de los cuales nacen nuestros pollitos.</p>
+											</div>
+										</div>
+									</div>
+									<div class="col-12">
+										<div class="life-cycle-item d-flex flex-wrap">
+											<div class="lci-left">
+												03
+											</div>
+											<div class="lci-right">
+												<h6>Embrión</h6>
+												<p>El huevo es incubado, y en esta fase se desarrolla el embrión que luego dará lugar al pollito.</p>
+											</div>
+										</div>
+									</div>
+									<div class="col-12">
+										<div class="life-cycle-item d-flex flex-wrap">
+											<div class="lci-left">
+												04
+											</div>
+											<div class="lci-right">
+												<h6>Pollito</h6>
+												<p>Los pollitos nacen y comienzan su crecimiento en un ambiente controlado, alimentándose de forma adecuada hasta llegar a la etapa adulta.</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Ciclo de Vida del Pollo Ending Here -->
+
+		<!-- Sección de Blog Start Here -->
+		<section class="blog-section relative padding-tb bg-ash">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div class="section-header">
+							<h3>Nuestras Últimas Noticias</h3>
+							<p>Personaliza convenientemente los servicios web proactivos para interfaces aprovechadas sin fronteras.</p>
+						</div>
+					</div>
+					<div class="col-12">
+						<div class="section-wrapper">
+							<div class="row justify-content-center">
+								<div class="col-lg-4 col-sm-6 col-12">
+									<div class="card border-none">
+										<img src="{% static 'assets/images/blog/01.jpg' %}" class="card-img-top" alt="blog">
+										<div class="card-body p-1 mt-3">
+											<a href="#">
+												<h6 class="card-title">Pollitos de pato para ayudar a resolver la obesidad...</h6>
+											</a>
+											<p class="card-text mb-3">Personalizamos servicios web proactivos sin fronteras, promoviendo la investigación en la industria avícola.</p>
+											<div class="text-btn">
+												<a href="blog-single.html"><span>Leer Más</span></a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-4 col-sm-6 col-12">
+									<div class="card border-none">
+										<img src="{% static 'assets/images/blog/02.jpg' %}" class="card-img-top" alt="blog">
+										<div class="card-body p-1 mt-3">
+											<a href="#">
+												<h6 class="card-title">¿Serán los huevos una nueva fuente de medicamentos contra el cáncer?</h6>
+											</a>
+											<p class="card-text mb-3">Exploramos cómo la industria avícola está incursionando en nuevas áreas de investigación médica.</p>
+											<div class="text-btn">
+												<a href="blog-single.html"><span>Leer Más</span></a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-4 col-sm-6 col-12">
+									<div class="card border-none">
+										<img src="{% static 'assets/images/blog/03.jpg' %}" class="card-img-top" alt="blog">
+										<div class="card-body p-1 mt-3">
+											<a href="#">
+												<h6 class="card-title">El pollo Omega-3 y los huevos pueden reducir ataques cardíacos...</h6>
+											</a>
+											<p class="card-text mb-3">A través de estudios innovadores, descubrimos cómo el pollo alimentado con Omega-3 puede mejorar la salud cardiovascular.</p>
+											<div class="text-btn">
+												<a href="blog-single.html">Leer Más<span></span></a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Sección de Blog Ending Here -->
+
+
+		<!-- sponsor section start here -->
+		<div class="sponsor-section padding-tb">
+			<div class="container">
+				<div class="section-wrapper">
+					<div class="sponsor-slider">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<div class="sponsor-item">
+									<div class="sponsor-thumb">
+										<a href="#"><img src="{% static 'assets/images/sponsor/01.png' %}" alt="sponsor"></a>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="sponsor-item">
+									<div class="sponsor-thumb">
+										<a href="#"><img src="{% static 'assets/images/sponsor/02.png' %}" alt="sponsor"></a>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="sponsor-item">
+									<div class="sponsor-thumb">
+										<a href="#"><img src="{% static 'assets/images/sponsor/03.png' %}" alt="sponsor"></a>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="sponsor-item">
+									<div class="sponsor-thumb">
+										<a href="#"><img src="{% static 'assets/images/sponsor/04.png' %}" alt="sponsor"></a>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="sponsor-item">
+									<div class="sponsor-thumb">
+										<a href="#"><img src="{% static 'assets/images/sponsor/05.png' %}" alt="sponsor"></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- sponsor section ending here -->
+
+		<!-- footer section start here -->
+		<footer>
+			<div class="footer-top relative padding-tb bg-ash relative">
+				<div class="shape-images">
+					<img src="{% static 'assets/images/shape-img/01.png' %}" alt="shape-images">
+				</div>
+				<div class="container">
+					<div class="section-wrapper row">
+						<div class="col-xl-3 col-md-6">
+							<div class="post-item">
+								<div class="footer-logo">
+									<img src="{% static 'assets/images/logo/01.png' %}" alt="footer-logo">
+								</div>
+								<p>En esta pagina web podras ver todo lo de nuestra granja. </p>
+
+							</div>
+						</div>
+						<div class="col-xl-3 col-md-6">
+			<div class="post-item">
+				<div class="post-title">
+					<h5>Mantente en Contacto</h5>
+				</div>
+				<ul class="lab-ul footer-location">
+					<li>
+						<div class="icon-part">
+							<i class="icofont-phone"></i>
+						</div>
+						<div class="content-part">
+							<p>+573102337052</p>
+						</div>
+					</li>
+					<li>
+						<div class="icon-part">
+							<i class="icofont-wall-clock"></i>
+						</div>
+						<div class="content-part">
+							<p>Lun - Vie 09:00 - 18:00</p>
+							<p>(excepto días festivos)</p>
+						</div>
+					</li>
+					<li>
+						<div class="icon-part">
+							<i class="icofont-location-pin"></i>
+						</div>
+						<div class="content-part">
+							<p>Villavicencio, Meta, Colombia</p>
+						</div>
+					</li>
+					<li>
+						<div class="icon-part">
+							<i class="icofont-envelope"></i>
+						</div>
+						<div class="content-part">
+							<p><a href="mailto:murgifarm@gmail.com">murgifarm@gmail.com</a></p>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+						<div class="col-xl-3 col-md-6">
+							<div class="post-item">
+								<div class="post-title">
+									<h5>Poultry Farm Product</h5>
+								</div>
+								<div class="lab-ul footer-post">
+									<div class="media mb-3">
+										<div class="fp-thumb mr-3">
+											<img src="{% static 'assets/images/products/product/01.png' %}" alt="recent-post">
+										</div>
+										<div class="media-body">
+											<a href="#">
+												<h6 class="mt-0">Light Brown Eggs</h6>
+											</a>
+											<span class="price">$25.99</span>
+										</div>
+									</div>
+									<div class="media mb-3">
+										<div class="fp-thumb mr-3">
+											<img src="{% static 'assets/images/products/product/02.png' %}" alt="recent-post">
+										</div>
+										<div class="media-body">
+											<a href="#">
+												<h6 class="mt-0">Little Chicken Broiler</h6>
+											</a>
+											<span class="price">$25.99</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-xl-3 col-md-6">
+							<div class="post-item">
+								<div class="post-title">
+									<h5>Instagram Feed</h5>
+								</div>
+								<div class="lab-ul footer-gellary">
+									<figure class="figure">
+										<a href="{% static 'assets/images/gallery/01.jpg' %}"" data-rel="lightcase:myCollection:slideshow"><img src="{% static 'assets/images/gallery/01.jpg' %}"" class="img-fluid rounded" alt="footer-gellary"></a>
+									</figure>
+									<figure class="figure">
+										<a href="{% static 'assets/images/gallery/02.jpg' %}"" data-rel="lightcase:myCollection:slideshow"><img src="{% static 'assets/images/gallery/02.jpg' %}"" class="img-fluid rounded" alt="footer-gellary"></a>
+									</figure>
+									<figure class="figure">
+										<a href="{% static 'assets/images/gallery/03.jpg' %}"" data-rel="lightcase:myCollection:slideshow"><img src="{% static 'assets/images/gallery/03.jpg' %}"" class="img-fluid rounded" alt="footer-gellary"></a>
+									</figure>
+									<figure class="figure">
+										<a href="{% static 'assets/images/gallery/04.jpg' %}"" data-rel="lightcase:myCollection:slideshow"><img src="{% static 'assets/images/gallery/04.jpg' %}"" class="img-fluid rounded" alt="footer-gellary"></a>
+									</figure>
+									<figure class="figure">
+										<a href="{% static 'assets/images/gallery/05.jpg' %}"" data-rel="lightcase:myCollection:slideshow"><img src="{% static 'assets/images/gallery/05.jpg' %}"" class="img-fluid rounded" alt="footer-gellary"></a>
+									</figure>
+									<figure class="figure">
+										<a href="{% static 'assets/images/gallery/06.jpg' %}"" data-rel="lightcase:myCollection:slideshow"><img src="{% static 'assets/images/gallery/06.jpg' %}"" class="img-fluid rounded" alt="footer-gellary"></a>
+									</figure>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer-bottom">
+				<div class="container">
+					<div class="section-wrapper">
+						<p class="text-center">&copy; 2020 <a href="index.html">Poultry Farm</a>.All Rights Reserved By <a href="https://themeforest.net/user/labartisan" target="_blank">LabArtisan</a></p>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- footer section start here -->
+
+		<!-- scrollToTop start here -->
+		<a href="#" class="scrollToTop"><i class="icofont-swoosh-up"></i><span class="pluse_1"></span><span class="pluse_2"></span></a>
+		<!-- scrollToTop ending here -->
+
+
+		<script src="{% static 'assets/js/jquery.js' %}"></script>
+		<script src="{% static 'assets/js/fontawesome.min.js' %}"></script>
+		<script src="{% static 'assets/js/waypoints.min.js' %}"></script>
+		<script src="{% static 'assets/js/bootstrap.min.js' %}"></script>
+		<script src="{% static 'assets/js/swiper.min.js' %}"></script>
+		<script src="{% static 'assets/js/jquery.countdown.min.js' %}"></script>
+		<script src="{% static 'assets/js/jquery.counterup.min.js' %}"></script>
+		<script src="{% static 'assets/js/isotope.pkgd.min.js' %}"></script>
+		<script src="{% static 'assets/js/lightcase.js' %}"></script>
+		<script src="{% static 'assets/js/functions.js' %}"></script>
+	</body>
+</html>
